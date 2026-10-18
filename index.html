@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Conoce a Alejandro Enrique Guido Masis: sus intereses y su afición por el FC Barcelona.">
+	<title>Alejandro Guido | Mi página personal</title>
+	<style>
+		:root {
+			color-scheme: light;
+			--ink: #18202b;
+			--muted: #5d6570;
+			--paper: #f7f4ed;
+			--white: #fffefa;
+			--blue: #123b70;
+			--red: #a81735;
+			--gold: #e7b943;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			background: var(--paper);
+			color: var(--ink);
+			font-family: Georgia, "Times New Roman", serif;
+			line-height: 1.65;
+		}
+
+		.topbar {
+			height: 12px;
+			background: linear-gradient(90deg, var(--blue) 0 48%, var(--gold) 48% 52%, var(--red) 52% 100%);
+		}
+
+		header, main, footer {
+			width: min(100% - 40px, 1000px);
+			margin-inline: auto;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-block: 24px;
+			border-bottom: 1px solid #d8d2c7;
+		}
+
+		.signature {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			font-size: 0.8rem;
+			font-weight: 700;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		.location {
+			margin: 0;
+			color: var(--muted);
+			font: 0.9rem Arial, sans-serif;
+		}
+
+		main { padding-block: 52px 72px; }
+
+		.intro {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) 260px;
+			align-items: center;
+			gap: 48px;
+			padding-bottom: 46px;
+		}
+
+		.eyebrow {
+			margin: 0 0 10px;
+			color: var(--red);
+			font: 700 0.78rem Arial, sans-serif;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			max-width: 680px;
+			margin: 0;
+			font-size: clamp(2.5rem, 7vw, 5rem);
+			font-weight: 500;
+			line-height: 0.98;
+		}
+
+		.intro-copy {
+			max-width: 610px;
+			margin: 22px 0 0;
+			color: #424a54;
+			font-size: 1.12rem;
+		}
+
+		.crest {
+			display: grid;
+			min-height: 260px;
+			place-items: center;
+			border-left: 4px solid var(--gold);
+			background: var(--white);
+		}
+
+		.crest img {
+			display: block;
+			width: min(190px, 72%);
+			height: 210px;
+			object-fit: contain;
+		}
+
+		.details {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 56px;
+			padding-top: 34px;
+			border-top: 1px solid #d8d2c7;
+		}
+
+		h2 {
+			margin: 0 0 16px;
+			font-size: 1.65rem;
+			font-weight: 500;
+		}
+
+		.interests {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 9px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.interests li {
+			padding: 6px 12px;
+			border: 1px solid #c9c4bb;
+			background: var(--white);
+			font: 0.9rem Arial, sans-serif;
+		}
+
+		.links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px 20px;
+		}
+
+		a { color: var(--blue); }
+		a:hover { color: var(--red); }
+		a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+
+		footer {
+			padding-block: 18px 28px;
+			border-top: 1px solid #d8d2c7;
+			color: var(--muted);
+			font: 0.85rem Arial, sans-serif;
+		}
+
+		@media (max-width: 680px) {
+			header, main, footer { width: min(100% - 32px, 1000px); }
+			main { padding-block: 36px 48px; }
+			.intro { grid-template-columns: 1fr; gap: 28px; }
+			.crest { min-height: 210px; border-left: 0; border-top: 4px solid var(--gold); }
+			.crest img { height: 170px; }
+			.details { grid-template-columns: 1fr; gap: 34px; }
+		}
+	</style>
+</head>
+<body>
+	<div class="topbar" aria-hidden="true"></div>
+	<header>
+		<p class="signature">Mi página personal</p>
+		<p class="location">Managua, Nicaragua</p>
+	</header>
+
+	<main>
+		<section class="intro" aria-labelledby="nombre">
+			<div>
+				<p class="eyebrow">Una pequeña presentación</p>
+				<h1 id="nombre">Alejandro Enrique Guido Masis</h1>
+				<p class="intro-copy">Me llamo Alejandro, tengo 21 años, casi 22, y soy de Managua. Estoy a punto de egresar de mi carrera. Me considero una persona tranquila y de casa; disfruto las películas, las series y los juegos. Amo ir al cine y me encantan las hamburguesas.</p>
+			</div>
+			<a class="crest" href="https://www.fcbarcelona.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio oficial del FC Barcelona">
+				<img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Escudo del FC Barcelona">
+			</a>
+		</section>
+
+		<section class="details" aria-label="Intereses y sitios favoritos">
+			<div>
+				<h2>Mis intereses</h2>
+				<ul class="interests">
+					<li>Juegos</li>
+					<li>Series</li>
+					<li>Cómics</li>
+					<li>Películas</li>
+					<li>Fútbol</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Un equipo que me gusta</h2>
+				<p>El FC Barcelona es parte de mis cosas favoritas. Aquí puedes visitar sus páginas oficiales:</p>
+				<nav class="links" aria-label="Sitios favoritos del FC Barcelona">
+					<a href="https://www.fcbarcelona.com/" target="_blank" rel="noopener noreferrer">Sitio oficial</a>
+					<a href="https://www.instagram.com/fcbarcelona/" target="_blank" rel="noopener noreferrer">Instagram</a>
+					<a href="https://www.youtube.com/user/fcbarcelona" target="_blank" rel="noopener noreferrer">YouTube</a>
+				</nav>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>Hecho por Alejandro Enrique Guido Masis</p>
+	</footer>
+</body>
+</html>
